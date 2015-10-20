@@ -68,7 +68,7 @@ describe Mandatory do
   describe '#valid?' do
     context 'with a tenant' do
       before do
-        item.client = client
+        Mongoid::Multitenancy.current_tenant = client
       end
 
       it 'is valid' do
@@ -97,6 +97,7 @@ describe Mandatory do
     end
 
     context 'without a tenant' do
+<<<<<<< HEAD
       before do
         item.client = nil
       end
