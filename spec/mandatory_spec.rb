@@ -97,7 +97,6 @@ describe Mandatory do
     end
 
     context 'without a tenant' do
-<<<<<<< HEAD
       before do
         item.client = nil
       end
